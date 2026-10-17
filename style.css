@@ -370,12 +370,9 @@ a {
   letter-spacing: .03em;
 }
 
+
 .card-arrow {
-  position: absolute;
-  right: 10px;
-  bottom: 8px;
-  font: 24px var(--display);
-  color: white;
+  display: none;
 }
 
 .image-placeholder {
