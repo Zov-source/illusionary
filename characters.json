@@ -2,11 +2,11 @@
   {
     "name": "Character Name 001",
     "image": "images/character-001.jpg",
-    "page": "characters/character-001.html"
+    "page": "character-001.html"
   },
   {
     "name": "Character Name 002",
     "image": "images/character-002.jpg",
-    "page": "characters/character-002.html"
+    "page": "character-002.html"
   }
 ]
