@@ -9,10 +9,12 @@
 </head>
 <body class="index-page">
 <div class="scanlines" aria-hidden="true"></div>
+
 <header class="site-header">
   <a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a>
   <span class="header-note">PERSONAL PROMPT DATABASE <span class="blue">/ 001</span></span>
 </header>
+
 <main class="index-main">
   <section class="hero">
     <div class="hero-side">
@@ -21,47 +23,157 @@
       <p class="hero-copy">A small collection of characters<br>and the prompts that create them.</p>
       <div class="hero-line"><span>NO. 001 — ∞</span><span>OPEN FILE</span></div>
     </div>
+
     <div class="hero-art" aria-label="abstract blue graphic">
-      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-      <div class="starburst starburst-one">✦</div><div class="starburst starburst-two">✦</div>
-      <div class="hero-cross">＋</div><div class="hero-code">0101<br>1010<br>0011<br>1100</div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="orbit orbit-three"></div>
+      <div class="starburst starburst-one">✦</div>
+      <div class="starburst starburst-two">✦</div>
+      <div class="hero-cross">＋</div>
+      <div class="hero-code">0101<br>1010<br>0011<br>1100</div>
       <div class="hero-stamp">DIGITAL<br>SPECIMEN<br><span>☆ 2026 ☆</span></div>
     </div>
-    <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-arrow">↓</span><span>YOU BELONG TO HERE.</span></div>
+
+    <div class="hero-bottom">
+      <span>SCROLL TO EXPLORE</span>
+      <span class="scroll-arrow">↓</span>
+      <span>YOU BELONG TO HERE.</span>
+    </div>
   </section>
+
   <section class="index-section">
     <div class="section-heading">
-      <div><span class="micro-label">FILE DIRECTORY / 01</span><h2>CHARACTER <span class="blue">INDEX</span></h2></div>
-      <div class="record-counter"><span id="count">00</span><small>RECORDS</small></div>
+      <div>
+        <span class="micro-label">FILE DIRECTORY / 01</span>
+        <h2>CHARACTER <span class="blue">INDEX</span></h2>
+      </div>
+      <div class="record-counter">
+        <span id="count">00</span>
+        <small>RECORDS</small>
+      </div>
     </div>
-    <div class="index-rule"><span>NO.</span><span>IMAGE / CHARACTER NAME</span><span>ACCESS ↗</span></div>
+
+    <nav id="tag-filters" class="tag-filters" aria-label="タグで絞り込む"></nav>
+
+    <div class="index-rule">
+      <span>NO.</span>
+      <span>IMAGE / CHARACTER NAME</span>
+      <span>ACCESS ↗</span>
+    </div>
+
     <section id="character-list" class="character-grid" aria-label="キャラクター一覧"></section>
     <p id="load-message" class="load-message">データを読み込み中…</p>
   </section>
-  <section class="end-banner"><span>END OF INDEX</span><span class="end-symbol">✦ ✦ ✦</span><span>STAY A LITTLE LONGER.</span></section>
+
+  <section class="end-banner">
+    <span>END OF INDEX</span>
+    <span class="end-symbol">✦ ✦ ✦</span>
+    <span>STAY A LITTLE LONGER.</span>
+  </section>
 </main>
-<footer class="site-footer"><span>ILLUSIONARY © 2026</span><span>MADE OF PIXELS & IMAGINATION</span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">BACK TO TOP ↑</a></footer>
+
+<footer class="site-footer">
+  <span>ILLUSIONARY © 2026</span>
+  <span>MADE OF PIXELS & IMAGINATION</span>
+  <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">BACK TO TOP ↑</a>
+</footer>
+
 <script>
 const list = document.getElementById("character-list");
 const message = document.getElementById("load-message");
 const count = document.getElementById("count");
-fetch("characters.json")
-  .then(r => { if (!r.ok) throw new Error("data"); return r.json(); })
-  .then(characters => {
-    count.textContent = String(characters.length).padStart(2, "0");
-    list.innerHTML = characters.map((c, i) => `
+const filters = document.getElementById("tag-filters");
+
+let characters = [];
+let activeTag = "ALL";
+
+function renderCharacters() {
+  const filtered = activeTag === "ALL"
+    ? characters
+    : characters.filter(c => (c.tags || []).includes(activeTag));
+
+  count.textContent = String(filtered.length).padStart(2, "0");
+
+  if (filtered.length === 0) {
+    list.innerHTML = "";
+    message.textContent = "NO RECORD FOUND.";
+    message.hidden = false;
+    return;
+  }
+
+  message.hidden = true;
+
+  list.innerHTML = filtered.map(c => {
+    const originalIndex = characters.indexOf(c) + 1;
+    const tags = (c.tags || []).map(tag =>
+      `<span class="character-tag">${tag}</span>`
+    ).join("");
+
+    return `
       <a class="character-card" href="${c.page}">
         <div class="card-image-wrap">
-          <span class="card-number">NO.${String(i + 1).padStart(3, "0")}</span>
-          <img src="${c.image}" alt="${c.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
-          <div class="image-placeholder" aria-hidden="true"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div>
+          <span class="card-number">NO.${String(originalIndex).padStart(3, "0")}</span>
+          <img src="${c.image}" alt="${c.name}" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="image-placeholder" aria-hidden="true">
+            <span>✦</span><small>IMAGE<br>NOT FOUND</small>
+          </div>
           <span class="card-arrow">↗</span>
         </div>
-        <div class="card-info"><div><span class="card-kicker">CHARACTER FILE</span><h3>${c.name}</h3></div><span class="card-index">${String(i + 1).padStart(2, "0")}</span></div>
-      </a>`).join("");
-    message.hidden = true;
+        <div class="card-info">
+          <div>
+            <span class="card-kicker">CHARACTER FILE</span>
+            <h3>${c.name}</h3>
+            <div class="card-tags">${tags}</div>
+          </div>
+          <span class="card-index">${String(originalIndex).padStart(2, "0")}</span>
+        </div>
+      </a>`;
+  }).join("");
+}
+
+function renderFilters() {
+  const tags = [...new Set(
+    characters.flatMap(c => c.tags || [])
+  )];
+
+  const allTags = ["ALL", ...tags];
+
+  filters.innerHTML = allTags.map(tag => `
+    <button
+      type="button"
+      class="tag-filter${activeTag === tag ? " active" : ""}"
+      data-tag="${tag}"
+      aria-pressed="${activeTag === tag}">
+      ${tag}
+    </button>
+  `).join("");
+
+  filters.querySelectorAll(".tag-filter").forEach(button => {
+    button.addEventListener("click", () => {
+      activeTag = button.dataset.tag;
+      renderFilters();
+      renderCharacters();
+    });
+  });
+}
+
+fetch("characters.json")
+  .then(response => {
+    if (!response.ok) throw new Error("data");
+    return response.json();
   })
-  .catch(() => { message.textContent = "characters.json を読み込めません。GitHub Pages にファイル一式をアップロードしてください。"; });
+  .then(data => {
+    characters = data;
+    renderFilters();
+    renderCharacters();
+  })
+  .catch(() => {
+    count.textContent = "00";
+    message.textContent =
+      "characters.json を読み込めません。ファイル名と配置を確認してください。";
+  });
 </script>
 </body>
 </html>
