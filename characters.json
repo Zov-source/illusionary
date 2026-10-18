@@ -1,53 +1,62 @@
-
 [
   {
     "name": "Character Name 001",
     "image": "images/character-001.jpg",
-    "page": "character-001.html"
+    "page": "character-001.html",
+    "tags": ["代理", "OC"]
   },
   {
     "name": "Character Name 002",
     "image": "images/character-002.jpg",
-    "page": "character-002.html"
+    "page": "character-002.html",
+    "tags": ["OC", "うちよそ"]
   },
   {
     "name": "Character Name 003",
     "image": "images/character-003.jpg",
-    "page": "character-003.html"
+    "page": "character-003.html",
+    "tags": ["代理", "うちよそ"]
   },
   {
     "name": "Character Name 004",
     "image": "images/character-004.jpg",
-    "page": "character-004.html"
+    "page": "character-004.html",
+    "tags": ["OC"]
   },
   {
     "name": "Character Name 005",
     "image": "images/character-005.jpg",
-    "page": "character-005.html"
+    "page": "character-005.html",
+    "tags": []
   },
   {
     "name": "Character Name 006",
     "image": "images/character-006.jpg",
-    "page": "character-006.html"
+    "page": "character-006.html",
+    "tags": []
   },
   {
     "name": "Character Name 007",
     "image": "images/character-007.jpg",
-    "page": "character-007.html"
+    "page": "character-007.html",
+    "tags": []
   },
   {
     "name": "Character Name 008",
     "image": "images/character-008.jpg",
-    "page": "character-008.html"
+    "page": "character-008.html",
+    "tags": []
   },
   {
     "name": "Character Name 009",
     "image": "images/character-009.jpg",
-    "page": "character-009.html"
+    "page": "character-009.html",
+    "tags": []
   },
   {
     "name": "Character Name 010",
     "image": "images/character-010.jpg",
-    "page": "character-010.html"
+    "page": "character-010.html",
+    "tags": []
   }
 ]
