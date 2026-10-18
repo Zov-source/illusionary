@@ -794,3 +794,54 @@ body {
 .site-footer {
   font-family: var(--mono);
 }
+/* TAG FILTERS */
+.tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.tag-filter {
+  padding: 8px 14px;
+  border: 1px solid rgba(80, 160, 255, 0.35);
+  background: transparent;
+  color: #a9b8ca;
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tag-filter:hover,
+.tag-filter.active {
+  color: #fff;
+  border-color: #4b9cff;
+  background: rgba(40, 120, 255, 0.18);
+  box-shadow: 0 0 10px rgba(40, 120, 255, 0.12);
+}
+
+/* CHARACTER TAGS */
+.card-tags,
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.character-tag,
+.detail-tag {
+  display: inline-block;
+  padding: 4px 7px;
+  border: 1px solid rgba(80, 160, 255, 0.3);
+  color: #7db8ff;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.detail-tags {
+  margin: 12px 0 20px;
+}
