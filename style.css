@@ -845,3 +845,34 @@ body {
 .detail-tags {
   margin: 12px 0 20px;
 }
+
+
+/* PROMPT TYPE */
+.prompt-type {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 18px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.prompt-type span:first-child {
+  padding: 6px 9px;
+  border: 1px solid rgba(75, 156, 255, 0.45);
+  color: #7db8ff;
+  background: rgba(40, 120, 255, 0.12);
+}
+
+.prompt-type span:last-child {
+  color: #a9b8ca;
+  letter-spacing: 0.04em;
+}
+
+.prompt-type.with-outfit span:first-child {
+  border-color: rgba(155, 125, 255, 0.5);
+  color: #c1b6ff;
+  background: rgba(110, 80, 255, 0.12);
+}
