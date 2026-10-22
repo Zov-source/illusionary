@@ -1,21 +1,21 @@
 [
   {
-    "name": "Character Name 001",
+    "name": "真紘",
     "image": "images/character-001.jpg",
     "page": "character-001.html",
-    "tags": ["代理", "OC"]
+    "tags": ["代理"]
   },
   {
-    "name": "Character Name 002",
+    "name": "椿",
     "image": "images/character-002.jpg",
     "page": "character-002.html",
-    "tags": ["OC", "うちよそ"]
+    "tags": ["代理"]
   },
   {
     "name": "Character Name 003",
     "image": "images/character-003.jpg",
     "page": "character-003.html",
-    "tags": ["代理", "うちよそ"]
+    "tags": ["OC"]
   },
   {
     "name": "Character Name 004",
