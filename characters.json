@@ -12,13 +12,13 @@
     "tags": ["代理"]
   },
   {
-    "name": "Character Name 003",
+    "name": "アーベル",
     "image": "images/character-003.jpg",
     "page": "character-003.html",
     "tags": ["OC"]
   },
   {
-    "name": "Character Name 004",
+    "name": "カイン",
     "image": "images/character-004.jpg",
     "page": "character-004.html",
     "tags": ["OC"]
@@ -27,31 +27,31 @@
     "name": "Character Name 005",
     "image": "images/character-005.jpg",
     "page": "character-005.html",
-    "tags": []
+    "tags": ["OC"]
   },
   {
     "name": "Character Name 006",
     "image": "images/character-006.jpg",
     "page": "character-006.html",
-    "tags": []
+    "tags": ["OC"]
   },
   {
     "name": "Character Name 007",
     "image": "images/character-007.jpg",
     "page": "character-007.html",
-    "tags": []
+    "tags": ["OC"]
   },
   {
     "name": "Character Name 008",
     "image": "images/character-008.jpg",
     "page": "character-008.html",
-    "tags": []
+    "tags": ["OC"]
   },
   {
     "name": "Character Name 009",
     "image": "images/character-009.jpg",
     "page": "character-009.html",
-    "tags": []
+    "tags": ["OC"]
   },
   {
     "name": "Character Name 010",
