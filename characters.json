@@ -36,7 +36,7 @@
     "tags": ["OC"]
   },
   {
-    "name": "Character Name 007",
+    "name": "凪",
     "image": "images/character-007.jpg",
     "page": "character-007.html",
     "tags": ["OC"]
@@ -57,6 +57,6 @@
     "name": "Character Name 010",
     "image": "images/character-010.jpg",
     "page": "character-010.html",
-    "tags": []
+    "tags": ["OC"]
   }
 ]
