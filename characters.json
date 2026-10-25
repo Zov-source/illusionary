@@ -3,60 +3,80 @@
     "name": "真紘",
     "image": "images/character-001.jpg",
     "page": "character-001.html",
-    "tags": ["代理"]
+    "tags": ["代理"],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT"
   },
   {
     "name": "椿",
     "image": "images/character-002.jpg",
     "page": "character-002.html",
-    "tags": ["代理"]
+    "tags": ["代理"],
+    "gender": "FEMALE",
+    "promptType": "WITH OUTFIT"
   },
   {
     "name": "アーベル",
     "image": "images/character-003.jpg",
     "page": "character-003.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "APPEARANCE ONLY"
   },
   {
     "name": "カイン",
     "image": "images/character-004.jpg",
     "page": "character-004.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "APPEARANCE ONLY"
   },
   {
     "name": "フェン",
     "image": "images/character-005.jpg",
     "page": "character-005.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "APPEARANCE ONLY"
   },
   {
     "name": "クロウ",
     "image": "images/character-006.jpg",
     "page": "character-006.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "APPEARANCE ONLY"
   },
   {
     "name": "凪",
     "image": "images/character-007.jpg",
     "page": "character-007.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "APPEARANCE ONLY"
   },
   {
     "name": "ニル",
     "image": "images/character-008.jpg",
     "page": "character-008.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "FEMALE",
+    "promptType": "APPEARANCE ONLY"
   },
   {
     "name": "ユノ",
     "image": "images/character-009.jpg",
     "page": "character-009.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "FEMALE",
+    "promptType": "APPEARANCE ONLY"
   },
   {
     "name": "ゼイン",
     "image": "images/character-010.jpg",
     "page": "character-010.html",
-    "tags": ["OC"]
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "APPEARANCE ONLY"
   }
 ]
