@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505"><title>サシャ — ILLUSIONARY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page"><div class="scanlines" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a><span class="header-note">PROMPT FILE <span class="blue">/ 015</span></span></header>
+<main class="detail-main">
+<a class="back-link" href="index.html">← BACK TO INDEX</a>
+<div class="detail-topline"><span>CHARACTER RECORD / 015</span><span>STATUS: AVAILABLE</span></div>
+<div class="detail-layout">
+  <div class="detail-visual"><img src="images/character-015.jpg" alt="サシャ" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="image-placeholder"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div></div>
+  <section class="detail-copy">
+    <h1>サシャ</h1>
+    <div class="prompt-type with-outfit">
+      <span>✦ WITH OUTFIT</span>
+      <span>服装込み</span>
+    </div>
+    <div class="prompt-label"><span>PROMPT DATA</span><span>TXT / 015</span></div>
+    <div class="prompt-box" id="prompt">1boy, solo, pale skin, slim build, messy hair, medium-length hair, 1.2::black hair::, brown highlights, layered hair, tousled hair, long bangs covering forehead, amber eyes, reddish-orange eyes, narrow eyes, lower eyelashes, red eye makeup, subtle blush, neutral expression, small mouth, 1.2::black cat ears::, fluffy animal ears, black inner ears, 1.2::oversized dark olive green jacket::, glossy fabric, camouflage pattern, brown and green mottled pattern, oversized sleeves, wide lapels, white fur collar, fluffy fur trim, spiked fur shoulders, gold metallic studs, zipper details, dangling zipper pulls, open jacket, 1.2::cream ribbed turtleneck sweater::, thick knit fabric, high neck, long sleeves, black pants, black belt, red belt accents, metallic buckle, gothic streetwear, alternative fashion, muted earthy colors,</div>
+    <button class="copy-button" id="copy-button" type="button">▣　COPY TO CLIPBOARD ↗</button>
+    <p class="copy-note" id="copy-note" aria-live="polite"></p>
+  </section>
+</div>
+<div class="detail-footer"><span>END OF FILE</span><span>ILLUSIONARY DATABASE © 2026</span></div>
+</main>
+<script>
+const button=document.getElementById("copy-button"), promptText=document.getElementById("prompt").innerText, note=document.getElementById("copy-note");
+button.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(promptText);note.textContent="✓ COPIED — PROMPT SAVED TO CLIPBOARD";}catch(e){const area=document.createElement("textarea");area.value=promptText;document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();note.textContent=ok?"✓ COPIED — PROMPT SAVED TO CLIPBOARD":"コピーできませんでした。プロンプトを長押ししてコピーしてください。";}});
+</script></body></html>
