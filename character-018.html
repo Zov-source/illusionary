@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505"><title>シルヴァ 018 — ILLUSIONARY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page"><div class="scanlines" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a><span class="header-note">PROMPT FILE <span class="blue">/ 018</span></span></header>
+<main class="detail-main">
+<a class="back-link" href="index.html">← BACK TO INDEX</a>
+<div class="detail-topline"><span>CHARACTER RECORD / 018</span><span>STATUS: AVAILABLE</span></div>
+<div class="detail-layout">
+  <div class="detail-visual"><img src="images/character-018.jpg" alt="シルヴァ"><div class="image-placeholder"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div></div>
+  <section class="detail-copy">
+    <span class="micro-label">SPECIMEN NO.018</span>
+    <h1>シルヴァ</h1>
+    <div class="prompt-type with-outfit">
+      <span>✦ WITH OUTFIT</span>
+      <span>服装込み</span>
+    </div>
+    <div class="prompt-label"><span>PROMPT DATA</span><span>TXT / 018</span></div>
+    <div class="prompt-box" id="prompt">masterpiece, best quality, ultra detailed, absurdres, boy, solo, adult male, mysterious celestial humanoid,
+
+1.5::small floating stars orbiting around his head, several tiny luminous five-pointed stars suspended at different heights around his temples and crown, miniature stars following curved orbital paths, delicate golden-white starlight, clearly visible separate floating stars::,
+
+1.7::hair with a miniature universe inside, cosmic inner hair, deep space visible between separated hair strands, inner layers of hair filled with swirling nebulae, tiny stars and distant galaxies embedded inside the hair, outer hair surface contrasting with the luminous cosmic interior::,
+
+1.4::thin eyebrows, narrow delicate eyebrows, softly angled eyebrows::,
+medium-length layered silver-gray hair, asymmetrical curtain fringe, wind-separated locks, slightly longer hair behind the ears, outward-curving side strands, fine feathered tips, pale moonlit outer hair, deep midnight-blue inner layers, luminous violet nebulae and turquoise star clusters visible within the hair, subtle cosmic gradients confined to the inner hair, tiny constellations drifting beneath translucent strands,
+
+pale cool-toned skin, narrow sleepy eyes, muted gold irises with tiny star-shaped highlights, faint dark circles, long eyelashes, sharp nose bridge, subtle beauty mark beneath one eye, calm absent-minded expression, slightly parted lips, slender elongated fingers, lean elegant physique,
+
+1.5::original celestial illusionist design, astronomical instrument motifs, refined eccentric silhouette::,
+high-neck midnight-blue tailored coat with a split asymmetric collar, one shoulder draped with translucent star-chart fabric, fitted charcoal waistcoat embroidered with fine orbital diagrams, silver thread tracing miniature constellations along the seams, layered inner panels resembling folded observatory charts, narrow pale-gold piping, asymmetrical waist sash, small antique brass astrolabe attached to the belt, crescent-shaped metal fasteners, glass pendulum ornaments, star-map lining visible inside the coat tails, fitted dark trousers, pointed ankle boots with metallic heel details, delicate rings engraved with planetary symbols, one long translucent glove patterned with faint constellations, midnight blue, silver-gray, muted violet, pale turquoise, antique gold accents, matte wool, translucent organza, brushed silver,</div>
+    <button class="copy-button" id="copy-button" type="button">▣　COPY TO CLIPBOARD ↗</button>
+    <p class="copy-note" id="copy-note" aria-live="polite"></p>
+  </section>
+</div>
+<div class="detail-footer"><span>END OF FILE</span><span>ILLUSIONARY DATABASE © 2026</span></div>
+</main>
+<script>
+const button=document.getElementById("copy-button"), promptText=document.getElementById("prompt").innerText, note=document.getElementById("copy-note");
+button.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(promptText);note.textContent="✓ COPIED — PROMPT SAVED TO CLIPBOARD";}catch(e){const area=document.createElement("textarea");area.value=promptText;document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();note.textContent=ok?"✓ COPIED — PROMPT SAVED TO CLIPBOARD":"コピーできませんでした。プロンプトを長押ししてコピーしてください。";}});
+</script></body></html>

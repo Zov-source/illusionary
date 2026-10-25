@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505"><title>テロン 021 — ILLUSIONARY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page"><div class="scanlines" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a><span class="header-note">PROMPT FILE <span class="blue">/ 021</span></span></header>
+<main class="detail-main">
+<a class="back-link" href="index.html">← BACK TO INDEX</a>
+<div class="detail-topline"><span>CHARACTER RECORD / 021</span><span>STATUS: AVAILABLE</span></div>
+<div class="detail-layout">
+  <div class="detail-visual"><img src="images/character-021.jpg" alt="テロン"><div class="image-placeholder"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div></div>
+  <section class="detail-copy">
+    <span class="micro-label">SPECIMEN NO.021</span>
+    <h1>テロン</h1>
+    <div class="prompt-type with-outfit">
+      <span>✦ WITH OUTFIT</span>
+      <span>服装込み</span>
+    </div>
+    <div class="prompt-label"><span>PROMPT DATA</span><span>TXT / 021</span></div>
+    <div class="prompt-box" id="prompt">masterpiece, best quality, amazing quality, very aesthetic, highly detailed anime illustration,
+
+1.5::boy, male anthropomorphic coyote, young adult, lean athletic build, broad shoulders, narrow waist, long limbs, warm beige skin, subtle canine muzzle, sharp cheekbones, slightly droopy half-lidded eyes, narrow steel-blue eyes, thin eyebrows, confident bored expression, slightly parted lips, small canine fangs,
+
+1.4::early 2000s Y2K fashion, futuristic retro streetwear,:: 1.3::messy layered silver-gray hair, short textured haircut, dark navy underlayer,:: long tapered coyote ears with dark tips, fluffy tail with charcoal gradient,
+
+1.4::oversized metallic silver headphones resting around his neck,:: glossy navy cropped technical jacket with a high collar, translucent smoky-gray panels, fitted black sleeveless shirt, relaxed charcoal cargo trousers with clean tailored seams, silver zipper details, translucent amber-orange belt buckle, streamlined black and silver sneakers,
+
+1.3::retro cordless telephone handset held casually against one shoulder,:: compact translucent amber plastic design, tiny keypad, subtle early-2000s consumer electronics aesthetic, restrained silver jewelry, clean layered silhouette, cohesive navy blue, silver gray, charcoal black and amber-orange color palette, glossy plastic, brushed metal, technical nylon, polished fashion design, understated futuristic nostalgia,</div>
+    <button class="copy-button" id="copy-button" type="button">▣　COPY TO CLIPBOARD ↗</button>
+    <p class="copy-note" id="copy-note" aria-live="polite"></p>
+  </section>
+</div>
+<div class="detail-footer"><span>END OF FILE</span><span>ILLUSIONARY DATABASE © 2026</span></div>
+</main>
+<script>
+const button=document.getElementById("copy-button"), promptText=document.getElementById("prompt").innerText, note=document.getElementById("copy-note");
+button.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(promptText);note.textContent="✓ COPIED — PROMPT SAVED TO CLIPBOARD";}catch(e){const area=document.createElement("textarea");area.value=promptText;document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();note.textContent=ok?"✓ COPIED — PROMPT SAVED TO CLIPBOARD":"コピーできませんでした。プロンプトを長押ししてコピーしてください。";}});
+</script></body></html>

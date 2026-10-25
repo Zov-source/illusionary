@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505"><title>望月 030 — ILLUSIONARY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page"><div class="scanlines" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a><span class="header-note">PROMPT FILE <span class="blue">/ 030</span></span></header>
+<main class="detail-main">
+<a class="back-link" href="index.html">← BACK TO INDEX</a>
+<div class="detail-topline"><span>CHARACTER RECORD / 030</span><span>STATUS: AVAILABLE</span></div>
+<div class="detail-layout">
+  <div class="detail-visual"><img src="images/character-030.jpg" alt="望月"><div class="image-placeholder"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div></div>
+  <section class="detail-copy">
+    <span class="micro-label">SPECIMEN NO.030</span>
+    <h1>望月</h1>
+    <div class="prompt-type with-outfit">
+      <span>✦ WITH OUTFIT</span>
+      <span>服装込み</span>
+    </div>
+    <div class="prompt-label"><span>PROMPT DATA</span><span>TXT / 030</span></div>
+    <div class="prompt-box" id="prompt">masterpiece, best quality, ultra detailed, absurdres, boy, solo, adult male, japanese dark fantasy, moon rabbit spirit,
+
+1.5::slender elegant physique, long limbs, narrow waist, pale porcelain skin, delicate androgynous facial features, sharp chin, narrow rose-colored eyes, crescent-shaped pupils, long pale eyelashes, subtle pink eyeshadow, faint beauty mark beneath left eye, small knowing smile, languid gaze, slightly pointed canine teeth::,
+
+1.5::long silky pearl-white hair, waist-length hair, layered flowing hair, soft lavender-pink gradient at hair tips, long parted bangs framing face, wispy strands across forehead, loose side braid decorated with tiny sakura blossoms, long white rabbit ears with dusty pink inner fur, one ear standing upright and the other drooping slightly, fluffy white rabbit tail, faint pink markings resembling flower petals around temples::,
+
+1.5::elegant black and pale pink kimono-inspired ensemble, asymmetrical layered kimono jacket, wide flowing sleeves, black silk outer robe with delicate sakura embroidery, pale blush-pink inner kimono, deep plum obi belt, translucent pink fabric draped from shoulders, long split hakama trousers, embroidered crescent moons along hems, ornamental silver chains at waist, pink crystal tassels, black tabi boots with lacquered soles, delicate floral hairpins, silver moon-shaped earrings, thin black choker with a dangling pearl::,
+
+1.4::mystical rabbit spirit, translucent pale pink crescent markings along collarbone, tiny sakura petals floating around ears, subtle luminous dust trailing from fingertips, faint moonlight glow beneath skin, elongated elegant nails painted muted rose, supernatural beauty, quiet mischievous aura::,</div>
+    <button class="copy-button" id="copy-button" type="button">▣　COPY TO CLIPBOARD ↗</button>
+    <p class="copy-note" id="copy-note" aria-live="polite"></p>
+  </section>
+</div>
+<div class="detail-footer"><span>END OF FILE</span><span>ILLUSIONARY DATABASE © 2026</span></div>
+</main>
+<script>
+const button=document.getElementById("copy-button"), promptText=document.getElementById("prompt").innerText, note=document.getElementById("copy-note");
+button.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(promptText);note.textContent="✓ COPIED — PROMPT SAVED TO CLIPBOARD";}catch(e){const area=document.createElement("textarea");area.value=promptText;document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();note.textContent=ok?"✓ COPIED — PROMPT SAVED TO CLIPBOARD":"コピーできませんでした。プロンプトを長押ししてコピーしてください。";}});
+</script></body></html>
