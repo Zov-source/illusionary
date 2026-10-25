@@ -7,21 +7,34 @@
 <title>ILLUSIONARY — Prompt Archive</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="index-page">
 <div class="scanlines" aria-hidden="true"></div>
 
 <header class="site-header">
-  <a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a>
-  <span class="header-note">PERSONAL PROMPT DATABASE <span class="blue">/ 001</span></span>
+  <a class="wordmark" href="index.html">
+    <span class="wordmark-symbol">✦</span>
+    ILLUSIONARY<span class="blue">.</span>
+  </a>
+  <span class="header-note">
+    PERSONAL PROMPT DATABASE <span class="blue">/ 001</span>
+  </span>
 </header>
 
 <main class="index-main">
+
   <section class="hero">
     <div class="hero-side">
       <span class="micro-label">WELCOME TO MY SPACE</span>
       <h1>prompt<br><span class="outline-text">archive</span><span class="blue">_</span></h1>
-      <p class="hero-copy">A small collection of characters<br>and the prompts that create them.</p>
-      <div class="hero-line"><span>NO. 001 — ∞</span><span>OPEN FILE</span></div>
+      <p class="hero-copy">
+        A small collection of characters<br>
+        and the prompts that create them.
+      </p>
+      <div class="hero-line">
+        <span>NO. 001 — ∞</span>
+        <span>OPEN FILE</span>
+      </div>
     </div>
 
     <div class="hero-art" aria-label="abstract blue graphic">
@@ -32,7 +45,9 @@
       <div class="starburst starburst-two">✦</div>
       <div class="hero-cross">＋</div>
       <div class="hero-code">0101<br>1010<br>0011<br>1100</div>
-      <div class="hero-stamp">DIGITAL<br>SPECIMEN<br><span>☆ 2026 ☆</span></div>
+      <div class="hero-stamp">
+        DIGITAL<br>SPECIMEN<br><span>☆ 2026 ☆</span>
+      </div>
     </div>
 
     <div class="hero-bottom">
@@ -43,6 +58,7 @@
   </section>
 
   <section class="index-section">
+
     <div class="section-heading">
       <div>
         <span class="micro-label">FILE DIRECTORY / 01</span>
@@ -54,7 +70,26 @@
       </div>
     </div>
 
-    <nav id="tag-filters" class="tag-filters" aria-label="タグで絞り込む"></nav>
+    <!-- PROMPT TYPE -->
+    <div class="filter-group">
+      <span class="filter-heading">PROMPT TYPE</span>
+      <nav id="prompt-filters" class="tag-filters"
+           aria-label="プロンプトタイプで絞り込む"></nav>
+    </div>
+
+    <!-- GENDER -->
+    <div class="filter-group">
+      <span class="filter-heading">GENDER</span>
+      <nav id="gender-filters" class="tag-filters"
+           aria-label="性別で絞り込む"></nav>
+    </div>
+
+    <!-- EXISTING TAGS -->
+    <div class="filter-group">
+      <span class="filter-heading">CHARACTER TAGS</span>
+      <nav id="tag-filters" class="tag-filters"
+           aria-label="キャラクタータグで絞り込む"></nav>
+    </div>
 
     <div class="index-rule">
       <span>NO.</span>
@@ -62,8 +97,13 @@
       <span>ACCESS ↗</span>
     </div>
 
-    <section id="character-list" class="character-grid" aria-label="キャラクター一覧"></section>
-    <p id="load-message" class="load-message">データを読み込み中…</p>
+    <section id="character-list" class="character-grid"
+             aria-label="キャラクター一覧"></section>
+
+    <p id="load-message" class="load-message">
+      データを読み込み中…
+    </p>
+
   </section>
 
   <section class="end-banner">
@@ -71,27 +111,193 @@
     <span class="end-symbol">✦ ✦ ✦</span>
     <span>STAY A LITTLE LONGER.</span>
   </section>
+
 </main>
 
 <footer class="site-footer">
   <span>ILLUSIONARY © 2026</span>
   <span>MADE OF PIXELS & IMAGINATION</span>
-  <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">BACK TO TOP ↑</a>
+  <a href="#top"
+     onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+    BACK TO TOP ↑
+  </a>
 </footer>
+
+<style>
+.filter-group {
+  margin: 22px 0;
+}
+
+.filter-heading {
+  display: block;
+  margin-bottom: 10px;
+  color: #7db8ff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+}
+
+.tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-filter {
+  padding: 8px 12px;
+  border: 1px solid rgba(80,160,255,.35);
+  background: transparent;
+  color: #a9b8ca;
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: .05em;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.tag-filter:hover,
+.tag-filter.active {
+  color: #fff;
+  border-color: #4b9cff;
+  background: rgba(40,120,255,.18);
+  box-shadow: 0 0 10px rgba(40,120,255,.12);
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.character-tag {
+  display: inline-block;
+  padding: 4px 7px;
+  border: 1px solid rgba(80,160,255,.3);
+  color: #7db8ff;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: .04em;
+}
+
+.character-tag.gender-tag {
+  border-color: rgba(193,182,255,.4);
+  color: #c1b6ff;
+}
+
+.character-tag.prompt-tag {
+  border-color: rgba(80,200,200,.4);
+  color: #80dede;
+}
+</style>
 
 <script>
 const list = document.getElementById("character-list");
 const message = document.getElementById("load-message");
 const count = document.getElementById("count");
-const filters = document.getElementById("tag-filters");
+
+const tagFilters = document.getElementById("tag-filters");
+const promptFilters = document.getElementById("prompt-filters");
+const genderFilters = document.getElementById("gender-filters");
 
 let characters = [];
+
 let activeTag = "ALL";
+let activePromptType = "ALL";
+let activeGender = "ALL";
+
+const promptTypes = [
+  { value: "ALL", label: "ALL" },
+  { value: "APPEARANCE ONLY", label: "APPEARANCE ONLY" },
+  { value: "WITH OUTFIT", label: "WITH OUTFIT" }
+];
+
+const genders = [
+  { value: "ALL", label: "ALL" },
+  { value: "MALE", label: "MALE" },
+  { value: "FEMALE", label: "FEMALE" },
+  { value: "OTHER", label: "OTHER" }
+];
+
+function createFilterButtons(container, options, activeValue, onSelect) {
+  container.innerHTML = options.map(option => `
+    <button
+      type="button"
+      class="tag-filter${activeValue === option.value ? " active" : ""}"
+      data-value="${option.value}"
+      aria-pressed="${activeValue === option.value}">
+      ${option.label}
+    </button>
+  `).join("");
+
+  container.querySelectorAll(".tag-filter").forEach(button => {
+    button.addEventListener("click", () => {
+      onSelect(button.dataset.value);
+    });
+  });
+}
+
+function renderTagFilters() {
+  const tags = [...new Set(
+    characters.flatMap(c => c.tags || [])
+  )];
+
+  const options = [
+    { value: "ALL", label: "ALL" },
+    ...tags.map(tag => ({ value: tag, label: tag }))
+  ];
+
+  createFilterButtons(
+    tagFilters,
+    options,
+    activeTag,
+    value => {
+      activeTag = value;
+      renderAll();
+    }
+  );
+}
+
+function renderPromptFilters() {
+  createFilterButtons(
+    promptFilters,
+    promptTypes,
+    activePromptType,
+    value => {
+      activePromptType = value;
+      renderAll();
+    }
+  );
+}
+
+function renderGenderFilters() {
+  createFilterButtons(
+    genderFilters,
+    genders,
+    activeGender,
+    value => {
+      activeGender = value;
+      renderAll();
+    }
+  );
+}
 
 function renderCharacters() {
-  const filtered = activeTag === "ALL"
-    ? characters
-    : characters.filter(c => (c.tags || []).includes(activeTag));
+  const filtered = characters.filter(c => {
+    const matchesTag =
+      activeTag === "ALL" ||
+      (c.tags || []).includes(activeTag);
+
+    const matchesPrompt =
+      activePromptType === "ALL" ||
+      c.promptType === activePromptType;
+
+    const matchesGender =
+      activeGender === "ALL" ||
+      c.gender === activeGender;
+
+    return matchesTag && matchesPrompt && matchesGender;
+  });
 
   count.textContent = String(filtered.length).padStart(2, "0");
 
@@ -106,57 +312,69 @@ function renderCharacters() {
 
   list.innerHTML = filtered.map(c => {
     const originalIndex = characters.indexOf(c) + 1;
+
     const tags = (c.tags || []).map(tag =>
       `<span class="character-tag">${tag}</span>`
     ).join("");
 
+    const genderTag = c.gender
+      ? `<span class="character-tag gender-tag">${c.gender}</span>`
+      : "";
+
+    const promptLabel = {
+      "APPEARANCE ONLY": "APPEARANCE ONLY",
+      "WITH OUTFIT": "WITH OUTFIT"
+    }[c.promptType];
+
+    const promptTag = promptLabel
+      ? `<span class="character-tag prompt-tag">${promptLabel}</span>`
+      : "";
+
     return `
       <a class="character-card" href="${c.page}">
         <div class="card-image-wrap">
-          <span class="card-number">NO.${String(originalIndex).padStart(3, "0")}</span>
-          <img src="${c.image}" alt="${c.name}" loading="lazy"
+          <span class="card-number">
+            NO.${String(originalIndex).padStart(3, "0")}
+          </span>
+
+          <img
+            src="${c.image}"
+            alt="${c.name}"
+            loading="lazy"
             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+
           <div class="image-placeholder" aria-hidden="true">
-            <span>✦</span><small>IMAGE<br>NOT FOUND</small>
+            <span>✦</span>
+            <small>IMAGE<br>NOT FOUND</small>
           </div>
+
           <span class="card-arrow">↗</span>
         </div>
+
         <div class="card-info">
           <div>
             <span class="card-kicker">CHARACTER FILE</span>
             <h3>${c.name}</h3>
-            <div class="card-tags">${tags}</div>
+            <div class="card-tags">
+              ${genderTag}
+              ${promptTag}
+              ${tags}
+            </div>
           </div>
-          <span class="card-index">${String(originalIndex).padStart(2, "0")}</span>
+
+          <span class="card-index">
+            ${String(originalIndex).padStart(2, "0")}
+          </span>
         </div>
       </a>`;
   }).join("");
 }
 
-function renderFilters() {
-  const tags = [...new Set(
-    characters.flatMap(c => c.tags || [])
-  )];
-
-  const allTags = ["ALL", ...tags];
-
-  filters.innerHTML = allTags.map(tag => `
-    <button
-      type="button"
-      class="tag-filter${activeTag === tag ? " active" : ""}"
-      data-tag="${tag}"
-      aria-pressed="${activeTag === tag}">
-      ${tag}
-    </button>
-  `).join("");
-
-  filters.querySelectorAll(".tag-filter").forEach(button => {
-    button.addEventListener("click", () => {
-      activeTag = button.dataset.tag;
-      renderFilters();
-      renderCharacters();
-    });
-  });
+function renderAll() {
+  renderTagFilters();
+  renderPromptFilters();
+  renderGenderFilters();
+  renderCharacters();
 }
 
 fetch("characters.json")
@@ -166,8 +384,7 @@ fetch("characters.json")
   })
   .then(data => {
     characters = data;
-    renderFilters();
-    renderCharacters();
+    renderAll();
   })
   .catch(() => {
     count.textContent = "00";
@@ -175,5 +392,6 @@ fetch("characters.json")
       "characters.json を読み込めません。ファイル名と配置を確認してください。";
   });
 </script>
+
 </body>
 </html>
