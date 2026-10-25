@@ -78,5 +78,54 @@
     "tags": ["OC"],
     "gender": "MALE",
     "promptType": "APPEARANCE ONLY"
+  },
+  {
+    "name": "アスタリオン",
+    "image": "images/character-011.jpg",
+    "page": "character-011.html",
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT"
+  },
+  {
+    "name": "ゼラス",
+    "image": "images/character-012.jpg",
+    "page": "character-012.html",
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT"
+  },
+  {
+    "name": "ムル",
+    "image": "images/character-013.jpg",
+    "page": "character-013.html",
+    "tags": ["OC"],
+    "gender": "OTHER",
+    "promptType": "WITH OUTFIT"
+  },
+  {
+    "name": "ネリオ",
+    "image": "images/character-014.jpg",
+    "page": "character-014.html",
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT"
+  },
+  {
+    "name": "サシャ",
+    "image": "images/character-015.jpg",
+    "page": "character-015.html",
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT"
+  },
+  {
+    "name": "斎",
+    "image": "images/character-016.jpg",
+    "page": "character-016.html",
+    "tags": ["OC"],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT"
   }
 ]
+
