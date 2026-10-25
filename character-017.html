@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ヴェスパー | ✦ ILLUSIONARY.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .prompt-detail { max-width: 900px; margin: 0 auto; padding: 28px 18px 64px; }
+    .record-kicker { color: var(--blue, #5757ff); font: 12px monospace; letter-spacing: .18em; }
+    .character-name { margin: 10px 0 6px; overflow-wrap: anywhere; }
+    .record-meta { display:flex; flex-wrap:wrap; gap:8px; margin: 16px 0 24px; }
+    .record-meta span { border:1px solid currentColor; padding:5px 9px; font:11px monospace; letter-spacing:.08em; }
+    .prompt-panel { border:1px solid rgba(87,87,255,.65); background:rgba(5,5,5,.78); padding:16px; }
+    .prompt-panel pre { white-space:pre-wrap; overflow-wrap:anywhere; margin:0; font:12px/1.7 monospace; color:var(--white,#f7f7ff); }
+    .prompt-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+    .prompt-actions button, .back-link { cursor:pointer; display:inline-block; border:1px solid var(--blue,#1717ff); background:transparent; color:inherit; padding:10px 14px; font:12px monospace; letter-spacing:.08em; text-decoration:none; }
+    .prompt-actions button:hover, .back-link:hover { background:var(--blue,#1717ff); color:#fff; }
+    .detail-image { width:100%; max-width:420px; aspect-ratio:1; object-fit:cover; display:block; margin:20px auto; border:1px solid rgba(87,87,255,.55); }
+    .image-missing { display:none; }
+    .small-label { color:rgba(247,247,255,.62); font:11px monospace; letter-spacing:.1em; margin:22px 0 8px; }
+  </style>
+</head>
+<body>
+  <main class="prompt-detail">
+    <div class="record-kicker">CHARACTER RECORD / 017</div>
+    <h1 class="character-name">ヴェスパー</h1>
+    <div class="record-meta">
+      <span>MALE</span><span>WITH OUTFIT</span><span>OC</span>
+    </div>
+    <img class="detail-image" src="images/character-017.jpg" alt="ヴェスパー" onerror="this.classList.add('image-missing')">
+    <div class="small-label">PROMPT FILE / 017</div>
+    <section class="prompt-panel" aria-label="Character prompt">
+      <pre id="character-prompt"></pre>
+    </section>
+    <div class="prompt-actions">
+      <button type="button" id="copy-prompt">COPY PROMPT</button>
+      <a class="back-link" href="index.html">BACK TO INDEX</a>
+    </div>
+  </main>
+  <script>
+    const promptText = "masterpiece, best quality, ultra detailed, absurdres, boy, solo, adult male, mineral humanoid,\n\n1.5::slender delicate physique, long limbs, narrow shoulders, narrow waist, elegant elongated silhouette, fine-boned hands::,\n\n1.5::long hair, waist-length straight hair, layered silky strands, uneven face-framing locks, loose hair flowing behind the shoulders::,\nhoney blonde outer hair, pale champagne gold highlights, deep amber undertones, translucent golden strands near the ends, fine individual hair strands,\n\n1.7::facial skin partially transformed into faceted yellow gemstones, translucent citrine crystals growing from one temple across the cheekbone and down the side of the neck, irregular mineral formations embedded seamlessly into the skin::,\n1.5::golden yellow crystal growths along one collarbone and shoulder, translucent quartz-like fingertips, amber mineral veins visible beneath translucent skin::,\nasymmetrical crystal distribution, natural geological fractures, sharply faceted surfaces, internal golden inclusions, subtle optical refraction, tiny trapped air bubbles, polished edges contrasting with rough raw crystal surfaces,\n\nthin delicate eyebrows, narrow eyes, pale golden irises, faint amber limbal rings, long eyelashes, narrow nose, delicate jawline, slightly tired expression, pale warm ivory skin, small golden mineral fragments beneath one eye,\n\n1.5::original citrine mineral character design, organic gemstone metamorphosis, refined geological aesthetic::,\n\nlong asymmetrical sleeveless coat in muted ochre and charcoal, high folded collar protecting the crystal-covered neck, fitted ivory inner shirt with an open asymmetric neckline exposing the crystalline collarbone, narrow black waist harness with small specimen vials, fine gold clasps, delicate chain fasteners, asymmetrical split coat tails, fitted charcoal trousers, narrow leather boots, fingerless gloves on the unaffected hand, one crystal-exposing arm left uncovered, small raw citrine specimens secured in metal settings, thin brass filigree following the natural crystal veins, restrained geometric stitching inspired by mineral cleavage planes, translucent amber fabric inserts, brushed antique gold hardware, matte charcoal wool, soft ivory silk, worn leather, realistic mineral refraction, intricate functional construction, warm yellow, citrine gold, honey amber, pale ivory, muted ochre and charcoal black,";
+    document.getElementById("character-prompt").textContent = promptText;
+    document.getElementById("copy-prompt").addEventListener("click", async () => {
+      const button = document.getElementById("copy-prompt");
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(promptText);
+        } else {
+          const field = document.createElement("textarea");
+          field.value = promptText;
+          field.style.position = "fixed";
+          field.style.opacity = "0";
+          document.body.appendChild(field);
+          field.select();
+          const ok = document.execCommand("copy");
+          field.remove();
+          if (!ok) throw new Error("copy failed");
+        }
+        button.textContent = "COPIED!";
+        setTimeout(() => button.textContent = "COPY PROMPT", 1500);
+      } catch (error) {
+        button.textContent = "COPY FAILED";
+        setTimeout(() => button.textContent = "COPY PROMPT", 1500);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ヴァルグ | ✦ ILLUSIONARY.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .prompt-detail { max-width: 900px; margin: 0 auto; padding: 28px 18px 64px; }
+    .record-kicker { color: var(--blue, #5757ff); font: 12px monospace; letter-spacing: .18em; }
+    .character-name { margin: 10px 0 6px; overflow-wrap: anywhere; }
+    .record-meta { display:flex; flex-wrap:wrap; gap:8px; margin: 16px 0 24px; }
+    .record-meta span { border:1px solid currentColor; padding:5px 9px; font:11px monospace; letter-spacing:.08em; }
+    .prompt-panel { border:1px solid rgba(87,87,255,.65); background:rgba(5,5,5,.78); padding:16px; }
+    .prompt-panel pre { white-space:pre-wrap; overflow-wrap:anywhere; margin:0; font:12px/1.7 monospace; color:var(--white,#f7f7ff); }
+    .prompt-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+    .prompt-actions button, .back-link { cursor:pointer; display:inline-block; border:1px solid var(--blue,#1717ff); background:transparent; color:inherit; padding:10px 14px; font:12px monospace; letter-spacing:.08em; text-decoration:none; }
+    .prompt-actions button:hover, .back-link:hover { background:var(--blue,#1717ff); color:#fff; }
+    .detail-image { width:100%; max-width:420px; aspect-ratio:1; object-fit:cover; display:block; margin:20px auto; border:1px solid rgba(87,87,255,.55); }
+    .image-missing { display:none; }
+    .small-label { color:rgba(247,247,255,.62); font:11px monospace; letter-spacing:.1em; margin:22px 0 8px; }
+  </style>
+</head>
+<body>
+  <main class="prompt-detail">
+    <div class="record-kicker">CHARACTER RECORD / 024</div>
+    <h1 class="character-name">ヴァルグ</h1>
+    <div class="record-meta">
+      <span>MALE</span><span>WITH OUTFIT</span><span>OC</span>
+    </div>
+    <img class="detail-image" src="images/character-024.jpg" alt="ヴァルグ" onerror="this.classList.add('image-missing')">
+    <div class="small-label">PROMPT FILE / 024</div>
+    <section class="prompt-panel" aria-label="Character prompt">
+      <pre id="character-prompt"></pre>
+    </section>
+    <div class="prompt-actions">
+      <button type="button" id="copy-prompt">COPY PROMPT</button>
+      <a class="back-link" href="index.html">BACK TO INDEX</a>
+    </div>
+  </main>
+  <script>
+    const promptText = "masterpiece, best quality, ultra detailed, intricate details, boy, adult male,\n1.7::extremely muscular male, massive bodybuilder physique, broad shoulders, thick neck, huge biceps, powerful forearms, muscular chest, sharply defined abs, thick muscular thighs::, 1.5::short cropped ash-gray hair, textured buzz cut, slightly tousled hair, shaved sides::, 1.5::bright amber eyes, sharp narrow eyes, jagged uneven teeth, wide crooked grin, prominent sharp canine teeth::, 1.3::sun-kissed skin, small scar across the bridge of the nose, black geometric tattoo on the neck, subtle freckles across the cheeks::,\n\n1.5::sleeveless dark olive military-style shirt, black tactical cargo pants, heavy combat boots, fingerless leather gloves, reinforced wrist guards, utility belt with metal buckles::, 1.3::silver ear cuff, black stud earrings, thick chain necklace, leather bracelet, small hoop piercing on the lower lip::,\n1.5::mischievous grin, cocky expression, rough masculine charm, fearless attitude, energetic and intimidating presence::,";
+    document.getElementById("character-prompt").textContent = promptText;
+    document.getElementById("copy-prompt").addEventListener("click", async () => {
+      const button = document.getElementById("copy-prompt");
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(promptText);
+        } else {
+          const field = document.createElement("textarea");
+          field.value = promptText;
+          field.style.position = "fixed";
+          field.style.opacity = "0";
+          document.body.appendChild(field);
+          field.select();
+          const ok = document.execCommand("copy");
+          field.remove();
+          if (!ok) throw new Error("copy failed");
+        }
+        button.textContent = "COPIED!";
+        setTimeout(() => button.textContent = "COPY PROMPT", 1500);
+      } catch (error) {
+        button.textContent = "COPY FAILED";
+        setTimeout(() => button.textContent = "COPY PROMPT", 1500);
+      }
+    });
+  </script>
+</body>
+</html>
