@@ -1,0 +1,112 @@
+[
+  {
+    "name": "白凪",
+    "image": "images/character-031.jpg",
+    "page": "character-031.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, absurdres, boy, solo, adult male, dark fantasy, japanese fantasy,\n\n1.5::tall, slender athletic build, long limbs, narrow waist, elegant posture, pale cool-toned skin, sharp facial features, high cheekbones, narrow icy blue eyes, pale silver eyebrows, long eyelashes, calm aloof expression, slightly parted lips::,\n\n1.5::long silver-white hair, waist-length hair, layered straight hair, uneven bangs partially covering one eye, loose face-framing strands, faint icy blue gradient at hair tips, delicate white frost crystals caught in hair, pointed ears, a pair of elegant translucent crystalline antlers, branching antlers resembling frozen bamboo, subtle blue glow along antler edges::,\n\n1.4::pale blue kimono-inspired inner robe, asymmetrical collar, layered white and deep navy garments, sleeveless outer haori, long flowing sleeves, dark indigo hakama trousers, split overskirt, silver embroidery resembling snowflakes and bamboo leaves, translucent icy fabric panels, intricate braided waist cord, pale blue tassels, black leather archery glove, fitted forearm guards, silver clasps, white tabi socks, dark traditional sandals::,\n\n1.4::frost-patterned markings along fingers and wrists::,"
+  },
+  {
+    "name": "時雨",
+    "image": "images/character-032.jpg",
+    "page": "character-032.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate details, boy, young teenage boy, middle school student, adolescent, 1.4::slender youthful build, narrow shoulders, delicate facial features, slightly lanky proportions::, 1.5::short dark navy hair, tousled short hair, uneven fringe, soft hair texture, slightly messy crown::, 1.3::large muted teal eyes, slightly drooping eyes, long eyelashes, faint freckles across nose, subtle eye bags::, 1.3::small adhesive bandage on cheek, faint healed scratch on chin::,\n\n1.4::oversized gray hoodie, white collared shirt, loosely knotted dark blue school tie, navy school trousers, worn sneakers, backpack slung over one shoulder::, 1.2::small silver ear cuff, fabric wristband::, 1.5::quiet reserved expression, observant gaze, slightly melancholic atmosphere, awkward adolescent charm, introspective personality::,"
+  },
+  {
+    "name": "ヤグアル",
+    "image": "images/character-033.jpg",
+    "page": "character-033.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate details, boy, adult male, kemono, anthropomorphic aquatic animal, non-human, 1.5::dark brown skin, muscular chest, broad shoulders, defined pectoral muscles, strong arms, athletic muscular physique::, 1.5::anthropomorphic black panther, feline ears, long black tail, feline muzzle, sharp fangs, digitigrade legs, black fur on ears and forearms::, 1.4::short slicked-back navy blue hair, subtle aqua highlights, pale turquoise eyes, slit pupils, long eyelashes::, 1.4::freckles scattered across nose, cheeks and shoulders, subtle spots across dark skin::,\n\n1.5::formal black three-piece suit, tailored waistcoat, crisp white dress shirt, dark teal necktie, fitted dress trousers, polished black leather shoes::, 1.3::silver tie pin, elegant cufflinks, black leather gloves, ornamental pocket watch, translucent blue gemstone ring::, 1.5::composed expression, elegant demeanor, restrained confidence, mysterious aristocratic aura, refined masculine beauty::,"
+  },
+  {
+    "name": "セーヴェル",
+    "image": "images/character-034.jpg",
+    "page": "character-034.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate details, boy, adult male, kemono, anthropomorphic non-human, 1.5::long jet black hair, straight waist-length hair, silky hair, loose strands framing face, center-parted bangs::, 1.5::extremely pale white skin, bloodless complexion, porcelain skin, cool undertones, no natural blush::, 1.4::sharp crimson eyes, narrow half-lidded eyes, dark circles beneath eyes, long eyelashes::, 1.5::jagged sharp teeth, uneven pointed teeth, slightly exposed fangs, sinister smile::, 1.4::anthropomorphic black wolf, wolf ears, long fluffy black tail, black fur on ears and tail, subtle canine features::,\n\n1.5::black formal tailcoat, high-collar white dress shirt, black satin waistcoat, black cravat, tailored dress trousers, polished leather dress shoes::, 1.3::ornate silver cufflinks, black gemstone tie pin, delicate chain brooch, black leather gloves, antique pocket watch::, 1.4::slender elegant fingers, long black nails, faint dark veins visible beneath pale skin::, 1.5::enigmatic expression, unsettling elegance, languid gaze, refined but predatory aura, gothic aristocratic atmosphere::,"
+  },
+  {
+    "name": "灰",
+    "image": "images/character-035.jpg",
+    "page": "character-035.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate details, boy, adult male, 1.4::lean muscular build, defined collarbones, toned arms, elegant long fingers::, 1.5::completely shaved eyebrows, no eyebrows, smooth brow area::, 1.5::numerous piercings, multiple silver ear piercings, industrial bar piercing, several helix rings, septum piercing, double nostril piercings, lip rings, eyebrow piercing jewelry::, 1.5::intricate black tattoos covering neck, throat, collarbones, chest, arms and fingers, ornamental geometric patterns, thorny floral motifs, fine-line tattoo details::, 1.4::short silver-gray hair, asymmetrical undercut, textured messy fringe, dark roots::, 1.3::pale lavender eyes, narrow eyes, heavy-lidded gaze, long eyelashes, dark eyeliner::, 1.3::black nail polish, multiple silver rings, ear chains, black gemstone earrings::,\n\n1.4::black mesh shirt, oversized distressed leather jacket, layered silver necklaces, black fitted trousers, chain belt, heavy platform boots::, 1.5::detached expression, rebellious attitude, dangerous charisma, androgynous beauty, underground fashion aesthetic::,"
+  },
+  {
+    "name": "冥",
+    "image": "images/character-036.jpg",
+    "page": "character-036.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "boy, male, adult,\n\n1.5::white hair with black strands, long center-parted bangs, middle-parted long fringe, messy low bun, loose hair strands::,\n\n1.4::droopy eyes, worried eyebrows, timid expression, anxious look, hesitant smile, red eyes, crimson irises, dark circles under eyes, prominent eye bags::,\n\n1.6::severe burn scars covering half of face, extensive facial scarring, irregular scar tissue, uneven skin texture, scars extending from forehead to cheek and jaw::,\n\n1.4::four glasses, glasses worn on face, glasses hanging around neck, glasses tucked into chest pocket, glasses inside pants pocket::,\n\n1.5::very tall, extremely thin, lanky, long limbs, narrow shoulders::, 1.3::hunched shoulders, slouching, awkward posture, fidgeting hands::,\n\n1.3::black turtleneck, white lab coat, dark trousers::, 1.4::thigh holster, knife in thigh holster::,\n\nshy, meek, nervous, easily intimidated, timid researcher,"
+  },
+  {
+    "name": "ケイルガーン",
+    "image": "images/character-037.jpg",
+    "page": "character-037.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate character design, gothic fantasy, cinematic lighting,\n\n1.5::boy, adult male, capricorn motif, zodiac-inspired character, mysterious celestial being, elegant and aloof demeanor::,\n\n1.5::a pair of large gemstone horns, curved ram horns resembling polished precious stones, faceted garnet crystals, deep crimson translucent crystal tips, black obsidian horn bases, intricate mineral inclusions, tiny stars suspended inside the horns, internal ruby-like glow, sharp crystalline facets reflecting light, symmetrical horn placement, unmistakably gemstone horns::,\n\n1.3::human-like face, pale cool-toned skin, narrow wine-red eyes, subtle golden flecks in the irises, thin well-defined eyebrows, sharp nose, elegant angular jawline, composed expression, pointed ears, faint constellation markings around the temples::,\n\n1.4::short black hair with a subtle burgundy sheen, layered cropped hairstyle, slightly tousled crown, neat tapered sides, delicate strands framing the forehead::,\n\n1.4::ornate black high-collar coat, tailored long coat with split tails, fitted charcoal waistcoat, black silk shirt, garnet gemstone brooch, fine silver embroidery depicting constellations, asymmetrical lapel, fitted gloves, decorative chain connecting to a pocket watch, dark tailored trousers, polished black boots, celestial antique fashion, luxurious velvet and brocade textures::,\n\n1.3::black, deep garnet red, antique silver, restrained gold accents, sophisticated gothic elegance, zodiac symbols subtly integrated into accessories, refined silhouette::,"
+  },
+  {
+    "name": "クラーグ",
+    "image": "images/character-038.jpg",
+    "page": "character-038.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, 1boy, adult male, humanoid mineral entity, tall slender build, elegant elongated limbs, translucent pale skin with a faint crystalline sheen, 1.5::intricate cracks spreading across the face, neck, hands and exposed skin::, 1.4::glowing gemstones embedded beneath the fractured skin::, jagged amethyst crystals emerging from the collarbone, tiny sapphire fragments embedded along the temples, translucent crystal shards growing from the fingertips, large multifaceted violet gemstone embedded in the center of the chest, luminous fractures revealing crystalline structures beneath the skin, thin well-defined eyebrows, narrow pale lavender eyes, crystalline irises, emotionless expression, delicate facial features, pointed chin, long silver-white hair with muted lavender undertones, layered wispy bangs, loose strands framing the face, a few tiny crystal beads braided into the hair, subtle mineral inclusions beneath the skin, faint iridescent reflections,\n\n1.4::dark gemstone specimen collector aesthetic::, high-collared black Victorian research coat, asymmetrical coat tails, fitted charcoal waistcoat, ivory shirt, thin black cravat secured with a faceted amethyst brooch, silver chain accessories, delicate leather harness crossing the torso, transparent specimen vials attached to the belt, small glass capsules containing mineral fragments, embroidered geological diagrams on the coat lining, black gloves with exposed fingertips, silver rings holding tiny gemstones, fitted dark trousers, polished black ankle boots, antique specimen case strapped to one hip, intricate metal clasps, restrained gothic elegance, black, smoky violet, sapphire blue and antique silver palette,"
+  },
+  {
+    "name": "ルーベル",
+    "image": "images/character-039.jpg",
+    "page": "character-039.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate character design, cinematic lighting,\n\n1.5::boy, adult male, mysterious supernatural cameraman, slender athletic build, pale cool-toned skin, eccentric and charismatic presence::,\n\n1.8::distinct five-pointed star-shaped pupils, clearly visible star-shaped pupils in both eyes, luminous cyan and electric-blue irises, sparkling eyes, tiny glittering highlights, tiny stars reflected across the eyes, magical shimmering gaze, subtle glowing particles around the eyelids::,\n\n1.3::thin well-defined eyebrows, sharp facial features, slightly sleepy eyelids, crooked playful smile, short silver-white hair, choppy cropped layers, asymmetrical fringe, dark navy underlayer, small holographic hair clips::,\n\n1.4::retro-futuristic streetwear, oversized charcoal bomber jacket with electric-blue piping, asymmetrical black high-neck shirt, layered utility harness, fitted dark trousers, metallic belt, fingerless gloves, chunky black sneakers, translucent blue straps, silver camera charms, CRT-inspired geometric accessories, reflective fabric panels::,\n\n1.5::vintage film camera hanging from a crossbody strap, tiny star-shaped charms, miniature floating screen ornaments, subtle pixel patterns, analog signal motifs, holographic star embroidery::,\n\n1.3::charcoal black, silver-white, electric cyan, vivid cobalt blue accents, retro television aesthetics, analog photography motifs, glossy plastic and brushed metal textures::,"
+  },
+  {
+    "name": "アストレウス",
+    "image": "images/character-040.jpg",
+    "page": "character-040.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, 1boy, adult male, 1.4::male ball-jointed doll::, delicate slender physique, elegant androgynous face, pale porcelain skin, 1.5::fine cracks spreading across the porcelain face and body::, visible spherical joints at shoulders, elbows, wrists, knees and ankles, intricate mechanical ball joints, hairline fractures around the joints, dark patterns resembling thorny rose vines visible beneath the cracks, thin well-defined eyebrows, downturned glassy eyes, one muted crimson eye and one cloudy gray eye, vacant melancholic gaze, slightly parted lips, small crack extending from the corner of the mouth, 1.3::short layered black hair with dusty mauve undertones::, uneven wispy bangs, long thin sidelocks, delicate black eyelashes, tiny porcelain fragments missing from one cheek, fine silver repair staples along the temple, black thread stitched through several cracks, gothic doll aesthetic, 1.4::black spiderweb lace and withered rose ornaments::,\n\nhigh-neck Victorian mourning blouse, fitted black velvet waistcoat, silver filigree buttons, layered translucent sleeves, asymmetrical black lace cravat, decorative chains connecting the collar to the chest, dark brocade shorts, sheer patterned tights, antique silver garters, polished black heeled boots, cracked porcelain finger guards, black ribbons tied around the wrists, dried burgundy roses pinned to the chest, tiny spiderweb embroidery, delicate silver thorn accessories, intricate antique craftsmanship, black, ivory, muted burgundy and tarnished silver palette, beautiful yet unsettling, tragic gothic elegance,"
+  }
+]

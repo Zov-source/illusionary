@@ -1,48 +1,23 @@
-# ILLUSIONARY — Prompt Archive
+# ILLUSIONARY — Character 031–040 Add-on
 
-Y2K / cybercore / electric-blue graphic style with pixel-inspired typographyの、GitHub Pages向けプロンプト保管サイトです。データベースやサーバーは不要です。
+既存サイトへキャラクター031〜040を追加する差分ファイルです。既存001〜030のファイルは含めていないため、上書きしません。
 
-## ファイル構成
+## 収録内容
+- `character-031.html` 〜 `character-040.html`：詳細ページ10枚（提示された真紘のHTMLテンプレートをベースに作成）
+- `characters-031-040.json`：一覧用データへの追加分10件
+- `README.md`：この説明と導入手順
 
-- `index.html` — トップページとキャラクター一覧
-- `style.css` — 全ページのデザイン
-- `characters.json` — 一覧に表示する名前・画像・詳細ページ
-- `characters/character-001.html` — 詳細ページのテンプレート
-- `images/` — キャラクター画像を入れるフォルダ
+## 反映内容
+- 名前とプロンプトは入力内容を反映。未入力の情報を推測で補完していません。
+- 性別：全員 `MALE`、タグ：全員 `OC`、プロンプト種別：全員 `WITH OUTFIT`
+- コピー機能付き。クリップボードAPIに失敗した場合の代替コピー処理も含みます。
+- 画像は生成・同梱していません。画像を使う場合は `images/character-031.jpg` 〜 `images/character-040.jpg` を既存リポジトリへ追加してください。
+- 既存の `style.css` を参照するため、CSSは同梱していません。
 
-## GitHub Pagesで公開
+## GitHubへの追加手順
+1. ZIPを展開します。
+2. `character-031.html` 〜 `character-040.html` を既存リポジトリのルートへアップロードします。
+3. `characters-031-040.json` の配列要素10件を既存の `characters.json` の配列末尾へ追加します。**既存の `characters.json` 全体を置き換えないでください。** JSON配列内で既存の最後の要素と新しい最初の要素の間にカンマが必要です。
+4. 変更をコミットしてGitHub Pagesへ反映します。
 
-1. GitHubでPublicリポジトリを作成
-2. ZIPを解凍し、中にあるファイルとフォルダをリポジトリの一番上にアップロード
-3. リポジトリの **Settings → Pages** を開く
-4. **Deploy from a branch** を選び、`main` と `/(root)` を指定して保存
-
-## キャラクター画像を入れる
-
-画像を `images` フォルダに入れ、次の名前にしてください。
-
-- `character-001.jpg`
-- `character-002.jpg`
-
-PNG画像なら、HTMLと`characters.json`の拡張子も `.png` に変更します。
-
-## キャラクターを追加する
-
-1. `characters/character-001.html`を複製し、ファイル名を `character-003.html` などにする
-2. ページ内の名前・番号・画像パス・プロンプトを書き換える
-3. `characters.json` の配列に1件追加する。例：
-
-```json
-{
-  "name": "Character Name 003",
-  "image": "images/character-003.jpg",
-  "page": "characters/character-003.html"
-}
-```
-
-## メモ
-
-- 名前やプロンプトはサンプルです。公開前に自分の内容へ変更してください。
-- 画像ファイル自体はサンプルに含めていません。
-- コピー機能はボタン1回で動作します。ブラウザの制限時は代替コピー処理を試します。
-- Google Fontsが利用できない環境では、端末の標準フォントで表示されます。
+`characters-031-040.json` は追加分のみの配列です。既存ファイルの形式が異なる場合は、既存データの形式に合わせて統合してください。

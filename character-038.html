@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505"><title>クラーグ 038 — ILLUSIONARY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page"><div class="scanlines" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a><span class="header-note">PROMPT FILE <span class="blue">/ 038</span></span></header>
+<main class="detail-main">
+<a class="back-link" href="index.html">← BACK TO INDEX</a>
+<div class="detail-topline"><span>CHARACTER RECORD / 038</span><span>STATUS: AVAILABLE</span></div>
+<div class="detail-layout">
+  <div class="detail-visual"><img src="images/character-038.jpg" alt="Character 038"><div class="image-placeholder"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div></div>
+  <section class="detail-copy">
+    <span class="micro-label">SPECIMEN NO.038</span>
+    <h1>クラーグ</h1>
+    <div class="prompt-type with-outfit"><span>✦ WITH OUTFIT</span><span>服装込み</span></div>
+    <div class="prompt-label"><span>PROMPT DATA</span><span>TXT / 038</span></div>
+    <div class="prompt-box" id="prompt">masterpiece, best quality, ultra detailed, 1boy, adult male, humanoid mineral entity, tall slender build, elegant elongated limbs, translucent pale skin with a faint crystalline sheen, 1.5::intricate cracks spreading across the face, neck, hands and exposed skin::, 1.4::glowing gemstones embedded beneath the fractured skin::, jagged amethyst crystals emerging from the collarbone, tiny sapphire fragments embedded along the temples, translucent crystal shards growing from the fingertips, large multifaceted violet gemstone embedded in the center of the chest, luminous fractures revealing crystalline structures beneath the skin, thin well-defined eyebrows, narrow pale lavender eyes, crystalline irises, emotionless expression, delicate facial features, pointed chin, long silver-white hair with muted lavender undertones, layered wispy bangs, loose strands framing the face, a few tiny crystal beads braided into the hair, subtle mineral inclusions beneath the skin, faint iridescent reflections,
+
+1.4::dark gemstone specimen collector aesthetic::, high-collared black Victorian research coat, asymmetrical coat tails, fitted charcoal waistcoat, ivory shirt, thin black cravat secured with a faceted amethyst brooch, silver chain accessories, delicate leather harness crossing the torso, transparent specimen vials attached to the belt, small glass capsules containing mineral fragments, embroidered geological diagrams on the coat lining, black gloves with exposed fingertips, silver rings holding tiny gemstones, fitted dark trousers, polished black ankle boots, antique specimen case strapped to one hip, intricate metal clasps, restrained gothic elegance, black, smoky violet, sapphire blue and antique silver palette,</div>
+    <p class="copy-note" id="prompt-status" aria-live="polite">PROMPT NOT ENTERED</p>
+    <button class="copy-button" id="copy-button" type="button">▣　COPY TO CLIPBOARD ↗</button>
+    <p class="copy-note" id="copy-note" aria-live="polite"></p>
+  </section>
+</div>
+<div class="detail-footer"><span>END OF FILE</span><span>ILLUSIONARY DATABASE © 2026</span></div>
+</main>
+<script>
+const button=document.getElementById("copy-button"), promptText=document.getElementById("prompt").innerText, note=document.getElementById("copy-note");
+button.addEventListener("click",async()=>{if(!promptText.trim()){note.textContent="プロンプトはまだ入力されていません。";return}try{await navigator.clipboard.writeText(promptText);note.textContent="✓ COPIED — PROMPT SAVED TO CLIPBOARD";}catch(e){const area=document.createElement("textarea");area.value=promptText;document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();note.textContent=ok?"✓ COPIED — PROMPT SAVED TO CLIPBOARD":"コピーできませんでした。プロンプトを長押ししてコピーしてください。";}});
+</script></body></html>

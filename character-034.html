@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505"><title>セーヴェル 034 — ILLUSIONARY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page"><div class="scanlines" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a><span class="header-note">PROMPT FILE <span class="blue">/ 034</span></span></header>
+<main class="detail-main">
+<a class="back-link" href="index.html">← BACK TO INDEX</a>
+<div class="detail-topline"><span>CHARACTER RECORD / 034</span><span>STATUS: AVAILABLE</span></div>
+<div class="detail-layout">
+  <div class="detail-visual"><img src="images/character-034.jpg" alt="Character 034"><div class="image-placeholder"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div></div>
+  <section class="detail-copy">
+    <span class="micro-label">SPECIMEN NO.034</span>
+    <h1>セーヴェル</h1>
+    <div class="prompt-type with-outfit"><span>✦ WITH OUTFIT</span><span>服装込み</span></div>
+    <div class="prompt-label"><span>PROMPT DATA</span><span>TXT / 034</span></div>
+    <div class="prompt-box" id="prompt">masterpiece, best quality, ultra detailed, intricate details, boy, adult male, kemono, anthropomorphic non-human, 1.5::long jet black hair, straight waist-length hair, silky hair, loose strands framing face, center-parted bangs::, 1.5::extremely pale white skin, bloodless complexion, porcelain skin, cool undertones, no natural blush::, 1.4::sharp crimson eyes, narrow half-lidded eyes, dark circles beneath eyes, long eyelashes::, 1.5::jagged sharp teeth, uneven pointed teeth, slightly exposed fangs, sinister smile::, 1.4::anthropomorphic black wolf, wolf ears, long fluffy black tail, black fur on ears and tail, subtle canine features::,
+
+1.5::black formal tailcoat, high-collar white dress shirt, black satin waistcoat, black cravat, tailored dress trousers, polished leather dress shoes::, 1.3::ornate silver cufflinks, black gemstone tie pin, delicate chain brooch, black leather gloves, antique pocket watch::, 1.4::slender elegant fingers, long black nails, faint dark veins visible beneath pale skin::, 1.5::enigmatic expression, unsettling elegance, languid gaze, refined but predatory aura, gothic aristocratic atmosphere::,</div>
+    <p class="copy-note" id="prompt-status" aria-live="polite">PROMPT NOT ENTERED</p>
+    <button class="copy-button" id="copy-button" type="button">▣　COPY TO CLIPBOARD ↗</button>
+    <p class="copy-note" id="copy-note" aria-live="polite"></p>
+  </section>
+</div>
+<div class="detail-footer"><span>END OF FILE</span><span>ILLUSIONARY DATABASE © 2026</span></div>
+</main>
+<script>
+const button=document.getElementById("copy-button"), promptText=document.getElementById("prompt").innerText, note=document.getElementById("copy-note");
+button.addEventListener("click",async()=>{if(!promptText.trim()){note.textContent="プロンプトはまだ入力されていません。";return}try{await navigator.clipboard.writeText(promptText);note.textContent="✓ COPIED — PROMPT SAVED TO CLIPBOARD";}catch(e){const area=document.createElement("textarea");area.value=promptText;document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();note.textContent=ok?"✓ COPIED — PROMPT SAVED TO CLIPBOARD":"コピーできませんでした。プロンプトを長押ししてコピーしてください。";}});
+</script></body></html>
